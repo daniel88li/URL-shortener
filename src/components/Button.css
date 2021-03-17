@@ -1,5 +1,6 @@
 .btn {
   border: none;
+  text-align: center;
 }
 
 .btn:active {
@@ -7,25 +8,33 @@
 }
 
 .btn--round {
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .btn--regular {
   border-radius: 10px;
 }
 
+/* size */
+
 .btn--mobile {
-  text-align: center;
   width: 80%;
   height: 2.5rem;
 }
 
 .btn--small {
-  width: 80px;
+  width: 100px;
+  height: 2rem;
 }
 
 .btn--medium {
-  width: 150px;
+  width: 200px;
+  height: 3rem;
+}
+
+.btn--long {
+  width: 90%;
+  height: 2.5rem;
 }
 
 .cyan {

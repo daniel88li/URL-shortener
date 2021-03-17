@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/daniel88li/fm-challenge9)
-- Live Site URL: [Github Pages]()
+- Live Site URL: [Github Pages](https://daniel88li.github.io/fm-challenge9/)
 
 ## My process
 
@@ -42,3 +42,4 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- [Font Awesome](https://fontawesome.com/) - React component version

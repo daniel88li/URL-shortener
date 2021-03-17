@@ -3,11 +3,11 @@
 :root {
   --primary-cyan: 180, 66%, 49%;
   --primary-dark-violet: 257, 27%, 26%;
-  --secondary-red: hsl(0, 87%, 67%);
-  --neutral-gray: hsl(0, 0%, 75%);
-  --neutral-grayish-violet: hsl(257, 7%, 63%);
-  --neutral-very-dark-blue: hsl(255, 11%, 22%);
-  --neutral-very-dark-violet: hsl(260, 8%, 14%);
+  --secondary-red: 0, 87%, 67%;
+  --neutral-gray: 0, 0%, 75%;
+  --neutral-grayish-violet: 257, 7%, 63%;
+  --neutral-very-dark-blue: 255, 11%, 22%;
+  --neutral-very-dark-violet: 260, 8%, 14%;
   --button-hover: hsla(180, 66%, 49%, 0.9);
 }
 
@@ -15,6 +15,10 @@
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(white 50%, hsla(var(--neutral-gray), 0.5) 50%);
 }
 
 .container {

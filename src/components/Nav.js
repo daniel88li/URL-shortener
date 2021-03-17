@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Nav.css";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as LogoIcon } from "../../images/logo.svg";
@@ -14,49 +14,58 @@ function Nav() {
     setmenuClick(!menuClick);
   };
 
-  const isSmallScreen = useMediaQuery({ query: "(min-width: 800px)" });
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 800px)" });
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 801px" });
 
+  const navName = isSmallScreen ? "menu-nav-mobile" : "menu-nav";
   return (
     <>
       <nav className="nav-bar">
-        <Link to="/" className="nav-logo">
+        {/* <Link to="/" className="nav-logo">
           <LogoIcon />
-        </Link>
+        </Link> */}
+        <a href="/" className="nav-logo">
+          <LogoIcon />
+        </a>
 
-        {/* media query */}
         {isSmallScreen && (
           <div className="menu-icon" onClick={handleMenuClick}>
             <FontAwesomeIcon icon={faBars} size="2x" />
           </div>
         )}
+
+        {((isSmallScreen && menuClick) || isLargeScreen) && (
+          <div className={navName}>
+            <ul>
+              <div className="nav-item-box">
+                <li>
+                  <a href="#features">Features</a>
+                </li>
+                <li>
+                  <a href="#pricing">Pricing</a>
+                </li>
+                <li>
+                  <a href="#resources">Resources</a>
+                </li>
+              </div>
+              <hr></hr>
+              <div className="account-box">
+                <li>
+                  <a href="#login">Login</a>
+                </li>
+                <li>
+                  <Button
+                    btnStyle="btn--round"
+                    btnSize={isSmallScreen ? "btn--mobile" : "btn--small"}
+                    btnColour="cyan"
+                    text="Sign Up"
+                  />
+                </li>
+              </div>
+            </ul>
+          </div>
+        )}
       </nav>
-      {menuClick ? (
-        <div className="menu-nav">
-          <ul>
-            <li>
-              <Link to="#features">Features</Link>
-            </li>
-            <li>
-              <a href="#pricing">Pricing</a>
-            </li>
-            <li>
-              <a href="#resources">Resources</a>
-            </li>
-            <hr></hr>
-            <li>
-              <a href="#login">Login</a>
-            </li>
-            <li>
-              <Button
-                btnStyle="btn--round"
-                btnSize="btn--mobile"
-                btnColour="cyan"
-                text="Sign Up"
-              />
-            </li>
-          </ul>
-        </div>
-      ) : null}
     </>
   );
 }
