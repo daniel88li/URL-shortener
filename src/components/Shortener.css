@@ -19,8 +19,8 @@
   padding: 0 1rem;
 }
 
-.shorten-form [name="url"] {
-}
+/* .shorten-form [name="url"] {
+} */
 
 input:invalid {
   color: hsl(var(--secondary-red));

@@ -6,16 +6,16 @@ function Shortener() {
   const [urlInput, setUrlInput] = useState("");
   const [linkList, setLinkList] = useState([]);
   const [err, setError] = useState("");
+  const [currCopyIndex, setCurrCopyIndex] = useState(null);
 
   const handleChange = (e) => {
     const { value } = e.target;
-    // console.log(value);
     setUrlInput(value);
   };
 
   const handleShorten = async (e) => {
     e.preventDefault();
-    console.log(isURL(urlInput));
+    // console.log(isURL(urlInput));
     if (urlInput === "") {
       setError("Please add a link");
       return;
@@ -49,8 +49,31 @@ function Shortener() {
     return pattern.test(str);
   };
 
-  const shortenLinks = linkList.map((linkObj) => {
-    return <LinkCard key={linkObj.code} linkObj={linkObj} />;
+  const copyToClipboard = async (e, index, linkObj) => {
+    try {
+      await navigator.clipboard.writeText(linkObj.full_short_link);
+      linkObj["copied"] = true;
+      setCurrCopyIndex((prevIndex) => {
+        if (prevIndex !== null && prevIndex !== index) {
+          // reset old copy button
+          linkList[prevIndex]["copied"] = false;
+        }
+        return index;
+      });
+    } catch (err) {
+      console.log(err);
+      linkObj["copied"] = false;
+    }
+  };
+
+  const shortenLinks = linkList.map((linkObj, index) => {
+    return (
+      <LinkCard
+        key={linkObj.code}
+        linkObj={linkObj}
+        copyFunc={(e) => copyToClipboard(e, index, linkObj)}
+      />
+    );
   });
 
   return (
