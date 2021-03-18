@@ -1,10 +1,9 @@
 import React from "react";
 import { ReactComponent as InfoImage } from "../../images/illustration-working.svg";
 import "./Content.css";
-// import SvgShortenMobile from "./SvgShortenMobile";
-// import { ReactComponent as BoostImageMobile } from "../../images/bg-boost-mobile.svg";
 import Button from "./Button";
 import Shortener from "./Shortener";
+import Footer from "./Footer";
 
 function Content() {
   return (
@@ -38,14 +37,49 @@ function Content() {
 
       <Shortener />
 
-      <div>
-        {/* <SvgShortenMobile
-          height="200"
-          viewBox="0 0 130 200"
-          className="shorten-svg"
-        /> */}
-        {/* <BoostImageMobile className="boost-svg" height="300" /> */}
+      <div className="stat-box">
+        <h4>Advanced Statistics</h4>
+        <p>
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
       </div>
+
+      <div>
+        <h4>Brand Recognition</h4>
+        <p>
+          Boost your brand recognition with each click. Generic links don’t mean
+          a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
+
+      <div>
+        <h4>Detailed Records</h4>
+        <p>
+          Gain insights into who is clicking your links. Knowing when and where
+          people engage with your content helps inform better decisions.
+        </p>
+      </div>
+
+      <div>
+        <h4>Fully Customizable</h4>
+        <p>
+          Improve brand awareness and content discoverability through
+          customizable links, supercharging audience engagement.
+        </p>
+      </div>
+
+      <div className="boost-box">
+        <h4>Boost your links today</h4>
+        <Button
+          btnStyle="btn--round"
+          btnSize="btn--medium"
+          btnColour="cyan"
+          text="Get Started"
+        />
+      </div>
+
+      <Footer />
     </>
   );
 }

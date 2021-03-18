@@ -24,8 +24,8 @@ function Nav() {
         {/* <Link to="/" className="nav-logo">
           <LogoIcon />
         </Link> */}
-        <a href="/" className="nav-logo">
-          <LogoIcon />
+        <a href="./" className="nav-logo">
+          <LogoIcon fill="#34313D" />
         </a>
 
         {isSmallScreen && (

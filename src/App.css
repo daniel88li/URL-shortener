@@ -19,10 +19,11 @@
 
 body {
   background: linear-gradient(white 50%, hsla(var(--neutral-gray), 0.5) 50%);
+  margin: 0;
 }
 
 .container {
-  margin: 1rem;
+  margin: 1rem 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
