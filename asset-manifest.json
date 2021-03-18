@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/fm-challenge9/static/css/main.87597f33.chunk.css",
-    "main.js": "/fm-challenge9/static/js/main.2a56949f.chunk.js",
-    "main.js.map": "/fm-challenge9/static/js/main.2a56949f.chunk.js.map",
+    "main.css": "/fm-challenge9/static/css/main.25280ee6.chunk.css",
+    "main.js": "/fm-challenge9/static/js/main.dc50ee17.chunk.js",
+    "main.js.map": "/fm-challenge9/static/js/main.dc50ee17.chunk.js.map",
     "runtime-main.js": "/fm-challenge9/static/js/runtime-main.2e7c1cea.js",
     "runtime-main.js.map": "/fm-challenge9/static/js/runtime-main.2e7c1cea.js.map",
     "static/js/2.b17862a7.chunk.js": "/fm-challenge9/static/js/2.b17862a7.chunk.js",
     "static/js/2.b17862a7.chunk.js.map": "/fm-challenge9/static/js/2.b17862a7.chunk.js.map",
     "index.html": "/fm-challenge9/index.html",
-    "static/css/main.87597f33.chunk.css.map": "/fm-challenge9/static/css/main.87597f33.chunk.css.map",
+    "static/css/main.25280ee6.chunk.css.map": "/fm-challenge9/static/css/main.25280ee6.chunk.css.map",
     "static/js/2.b17862a7.chunk.js.LICENSE.txt": "/fm-challenge9/static/js/2.b17862a7.chunk.js.LICENSE.txt",
     "static/media/Shortener.css": "/fm-challenge9/static/media/bg-shorten-mobile.9745a66a.svg",
     "static/media/illustration-working.c9b5ef54.svg": "/fm-challenge9/static/media/illustration-working.c9b5ef54.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.2e7c1cea.js",
     "static/js/2.b17862a7.chunk.js",
-    "static/css/main.87597f33.chunk.css",
-    "static/js/main.2a56949f.chunk.js"
+    "static/css/main.25280ee6.chunk.css",
+    "static/js/main.dc50ee17.chunk.js"
   ]
 }
