@@ -56,7 +56,7 @@ function Nav() {
                 <li>
                   <Button
                     btnStyle="btn--round"
-                    btnSize={isSmallScreen ? "btn--mobile" : "btn--small"}
+                    btnSize={isSmallScreen ? "btn--mobile" : "btn--nav"}
                     btnColour="cyan"
                     text="Sign Up"
                   />

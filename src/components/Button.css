@@ -27,6 +27,11 @@
   height: 2rem;
 }
 
+.btn--nav {
+  width: 100px;
+  height: 2rem;
+}
+
 .btn--medium {
   width: 200px;
   height: 3rem;

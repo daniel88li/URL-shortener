@@ -5,7 +5,6 @@ import "./App.css";
 import Content from "./components/Content";
 
 function App() {
-  //const [query, setQuery] = useState("");
   return (
     <div className="container">
       <Nav />

@@ -19,11 +19,14 @@ function Shortener() {
 
   const handleShorten = async (e) => {
     e.preventDefault();
-    // console.log(isURL(urlInput));
+    const input = document.getElementsByName("url")[0];
+
     if (urlInput === "") {
       setError("Please add a link");
+      input.setCustomValidity("Empty input");
       return;
     }
+    input.setCustomValidity("");
 
     if (isURL(urlInput)) {
       const url = `https://api.shrtco.de/v2/shorten?url=${urlInput}`;
