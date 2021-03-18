@@ -1,8 +1,9 @@
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  align-self: stretch;
+  align-self: center;
   margin: 1rem;
+  width: calc(100% - 2rem);
 }
 
 .menu-nav {
@@ -107,4 +108,10 @@ hr {
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
+}
+
+@media (min-width: 800px) {
+  .nav-bar {
+    width: 85%;
+  }
 }

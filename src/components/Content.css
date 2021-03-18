@@ -57,7 +57,6 @@ img {
   align-items: center;
   width: 100%;
   height: 300px;
-  margin-top: 3rem;
 }
 
 .boost-box h4 {
@@ -67,7 +66,74 @@ img {
 }
 
 .stat-box {
-  margin: 3rem 0;
+  margin: 4rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-box > div {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0rem 1.5rem 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.stat-box > p {
+  margin-bottom: 4rem;
+}
+
+.stat-box p {
+  font-size: 16px;
+  text-align: center;
+  color: hsl(var(--neutral-grayish-violet));
+}
+
+.stat-box h3 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.stat-box h4 {
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+}
+
+.stat-box .separator {
+  width: 7px;
+  height: 5rem;
+  background-color: hsl(var(--primary-cyan));
+  padding: 0;
+}
+
+.stat-icons {
+  background-size: 40px 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  top: -40px;
+}
+
+.stat-1 .stat-icons {
+  background: url(../../images/icon-brand-recognition.svg)
+    hsl(var(--primary-dark-violet)) no-repeat center;
+}
+
+.stat-2 .stat-icons {
+  background: url(../../images/icon-detailed-records.svg)
+    hsl(var(--primary-dark-violet)) no-repeat center;
+}
+
+.stat-3 .stat-icons {
+  background: url(../../images/icon-fully-customizable.svg)
+    hsl(var(--primary-dark-violet)) no-repeat center;
 }
 
 @media (min-width: 800px) {
@@ -81,7 +147,7 @@ img {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
+    width: 85%;
   }
 
   .info-box {
@@ -109,6 +175,10 @@ img {
     background: url(../../images/bg-boost-desktop.svg)
       hsl(var(--primary-dark-violet)) no-repeat;
     background-size: cover;
+  }
+
+  .stat-box {
+    width: 85%;
   }
 }
 

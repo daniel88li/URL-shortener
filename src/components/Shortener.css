@@ -69,6 +69,7 @@ input:invalid::placeholder {
     align-items: flex-end;
     padding: 0 3rem;
     margin: 1rem 0;
+    width: 85%;
   }
 
   .input-box {

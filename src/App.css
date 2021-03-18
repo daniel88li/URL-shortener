@@ -18,7 +18,12 @@
 }
 
 body {
-  background: linear-gradient(white 50%, hsla(var(--neutral-gray), 0.5) 50%);
+  background: linear-gradient(
+    white,
+    white 25%,
+    hsla(var(--neutral-gray), 0.4) 25%,
+    hsla(var(--neutral-gray), 0.4) 60%
+  );
   margin: 0;
 }
 
