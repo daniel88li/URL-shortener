@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fm-challenge9/static/css/main.d8165810.chunk.css",
-    "main.js": "/fm-challenge9/static/js/main.e0022d09.chunk.js",
-    "main.js.map": "/fm-challenge9/static/js/main.e0022d09.chunk.js.map",
+    "main.css": "/fm-challenge9/static/css/main.a57012a4.chunk.css",
+    "main.js": "/fm-challenge9/static/js/main.10e87764.chunk.js",
+    "main.js.map": "/fm-challenge9/static/js/main.10e87764.chunk.js.map",
     "runtime-main.js": "/fm-challenge9/static/js/runtime-main.2e7c1cea.js",
     "runtime-main.js.map": "/fm-challenge9/static/js/runtime-main.2e7c1cea.js.map",
     "static/js/2.b17862a7.chunk.js": "/fm-challenge9/static/js/2.b17862a7.chunk.js",
     "static/js/2.b17862a7.chunk.js.map": "/fm-challenge9/static/js/2.b17862a7.chunk.js.map",
     "index.html": "/fm-challenge9/index.html",
-    "static/css/main.d8165810.chunk.css.map": "/fm-challenge9/static/css/main.d8165810.chunk.css.map",
+    "static/css/main.a57012a4.chunk.css.map": "/fm-challenge9/static/css/main.a57012a4.chunk.css.map",
     "static/js/2.b17862a7.chunk.js.LICENSE.txt": "/fm-challenge9/static/js/2.b17862a7.chunk.js.LICENSE.txt",
-    "static/media/Content.css": "/fm-challenge9/static/media/bg-boost-mobile.4b04bd89.svg",
+    "static/media/Content.css": "/fm-challenge9/static/media/icon-fully-customizable.a1532a74.svg",
     "static/media/Shortener.css": "/fm-challenge9/static/media/bg-shorten-mobile.9745a66a.svg",
     "static/media/icon-facebook.229c75a0.svg": "/fm-challenge9/static/media/icon-facebook.229c75a0.svg",
     "static/media/icon-instagram.df587328.svg": "/fm-challenge9/static/media/icon-instagram.df587328.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.2e7c1cea.js",
     "static/js/2.b17862a7.chunk.js",
-    "static/css/main.d8165810.chunk.css",
-    "static/js/main.e0022d09.chunk.js"
+    "static/css/main.a57012a4.chunk.css",
+    "static/js/main.10e87764.chunk.js"
   ]
 }
