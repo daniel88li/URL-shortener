@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LinkCard from "./LinkCard";
 import "./Shortener.css";
 
 function Shortener() {
+  const sessionKey = "shortenLinks";
   const [urlInput, setUrlInput] = useState("");
-  const [linkList, setLinkList] = useState([]);
+  // retrieve session of list of shortened links or init
+  const [linkList, setLinkList] = useState(
+    JSON.parse(sessionStorage.getItem(sessionKey)) || []
+  );
   const [err, setError] = useState("");
-  const [currCopyIndex, setCurrCopyIndex] = useState(null);
+  const [, setCurrCopyIndex] = useState(null);
 
   const handleChange = (e) => {
     const { value } = e.target;
@@ -76,17 +80,24 @@ function Shortener() {
     );
   });
 
+  // store list of shortened links in session
+  useEffect(() => {
+    sessionStorage.setItem(sessionKey, JSON.stringify(linkList));
+  }, [linkList]);
+
   return (
     <>
       <form noValidate className="shorten-form" onSubmit={handleShorten}>
-        <input
-          type="text"
-          name="url"
-          value={urlInput}
-          onChange={handleChange}
-          placeholder="Shorten a link here..."
-        />
-        <p className="error-msg">{err}</p>
+        <div className="input-box">
+          <input
+            type="text"
+            name="url"
+            value={urlInput}
+            onChange={handleChange}
+            placeholder="Shorten a link here..."
+          />
+          <p className="error-msg">{err}</p>
+        </div>
         <input type="submit" value="Shorten It!" />
       </form>
       {shortenLinks}

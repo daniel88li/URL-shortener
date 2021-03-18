@@ -1,8 +1,11 @@
 import React from "react";
 import Button from "./Button";
 import "./LinkCard.css";
+import { useMediaQuery } from "react-responsive";
 
 function LinkCard({ linkObj, copyFunc }) {
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 800px" });
+
   return (
     <div className="link-card">
       <span className="link-original">{linkObj.original_link}</span>
@@ -11,7 +14,7 @@ function LinkCard({ linkObj, copyFunc }) {
       <Button
         onClick={copyFunc}
         btnStyle="btn--regular"
-        btnSize="btn--long"
+        btnSize={isLargeScreen ? "btn--small" : "btn--long"}
         btnColour={linkObj.copied ? "violet" : "cyan"}
         text={linkObj.copied ? "Copied!" : "Copy"}
       />

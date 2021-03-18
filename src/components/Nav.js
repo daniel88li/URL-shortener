@@ -14,8 +14,8 @@ function Nav() {
     setmenuClick(!menuClick);
   };
 
-  const isSmallScreen = useMediaQuery({ query: "(max-width: 800px)" });
-  const isLargeScreen = useMediaQuery({ query: "(min-width: 801px" });
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 799px)" });
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 800px" });
 
   const navName = isSmallScreen ? "menu-nav-mobile" : "menu-nav";
   return (

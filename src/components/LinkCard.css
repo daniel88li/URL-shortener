@@ -7,8 +7,8 @@
   /* height: 200px; */
   background-color: white;
   margin: 1rem 0;
-  padding: 0.5rem 0;
-  border-radius: 5px;
+  padding: 1rem 0;
+  border-radius: 10px;
 }
 
 .link-card span {
@@ -29,4 +29,35 @@
   height: 1px;
   border: none;
   width: 100%;
+}
+
+.link-card button {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  .link-card {
+    flex-flow: row nowrap;
+    margin: 0.5rem 0;
+    padding: 0 1.5rem;
+    height: 3.5rem;
+  }
+
+  .link-card hr {
+    display: none;
+  }
+
+  .link-card .link-short {
+    width: fit-content;
+    overflow: visible;
+    margin: 0 1rem;
+  }
+
+  .link-card button {
+    margin: 0;
+  }
+
+  .link-card * {
+    font-size: 14px;
+  }
 }

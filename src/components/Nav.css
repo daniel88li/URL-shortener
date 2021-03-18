@@ -106,6 +106,8 @@ hr {
 .menu-nav .nav-item-box {
   display: flex;
   justify-content: space-evenly;
+  height: 2rem;
+  align-items: center;
 }
 
 .menu-nav .account-box {
