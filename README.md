@@ -1,5 +1,8 @@
 # Frontend Mentor - Shortly URL shortening API Challenge solution
 
+This app shortens a given URL and allows user to copy the new returned link. The shortened links are kept in session. All other buttons are cosmetic only.  
+The app uses shortening API from https://app.shrtco.de/
+
 This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -43,3 +46,4 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Font Awesome](https://fontawesome.com/) - React component version
+- [SHRTCODE](https://app.shrtco.de/) - API to shorten links
