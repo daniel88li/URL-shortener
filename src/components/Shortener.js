@@ -101,7 +101,9 @@ function Shortener() {
           />
           <p className="error-msg">{err}</p>
         </div>
-        <input type="submit" value="Shorten It!" />
+        <div id="search-btn">
+          <input type="submit" value="Shorten It!" />
+        </div>
       </form>
       {shortenLinks}
     </>

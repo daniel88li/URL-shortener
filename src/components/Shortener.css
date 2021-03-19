@@ -13,10 +13,15 @@
 }
 
 .shorten-form input {
-  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
   width: 80%;
   height: 3rem;
   padding: 0 1rem;
+}
+
+input:active {
+  outline: none;
 }
 
 .form-input {
@@ -49,6 +54,22 @@ input:invalid::placeholder {
   background-color: hsl(var(--primary-cyan));
   color: white;
   font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+#search-btn {
+  background-color: white;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.shorten-form [type="submit"]:active {
+  background-color: hsla(var(--primary-cyan), 0.5);
+  /* background-color: var(--button-hover); */
+  transition: all 0.3s ease;
 }
 
 .error-msg {
@@ -68,7 +89,7 @@ input:invalid::placeholder {
     justify-content: center;
     align-items: flex-end;
     padding: 0 3rem;
-    margin: 1rem 0;
+    margin: 1rem;
     width: 85%;
   }
 
@@ -85,9 +106,8 @@ input:invalid::placeholder {
     width: 100%;
   }
 
-  .shorten-form [type="submit"] {
+  #search-btn {
     flex: 1;
-    align-self: center;
   }
 
   .error-msg {

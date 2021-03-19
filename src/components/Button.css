@@ -1,6 +1,7 @@
 .btn {
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .btn:active {
@@ -12,7 +13,7 @@
 }
 
 .btn--regular {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* size */
@@ -52,7 +53,8 @@
   color: white;
 }
 
-.cyan:hover {
+.cyan:hover,
+.cyan:active {
   background-color: hsla(var(--primary-cyan), 0.5);
   transition: all 0.3s ease;
 }

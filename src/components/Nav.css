@@ -58,7 +58,8 @@
 }
 
 .menu-nav li {
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
+  margin-left: 1rem;
 }
 
 .menu-nav a {
@@ -71,16 +72,11 @@
   color: hsl(var(--neutral-very-dark-blue));
 }
 
-.menu-nav a:visited {
-  /* color: var(--neutral-very-dark-blue); */
-}
-
 .menu-nav hr {
   display: none;
 }
 
 .nav-bar .nav-logo {
-  /* margin: 0; */
   margin-right: 2rem;
 }
 
@@ -107,7 +103,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 1rem;
 }
 
 @media (min-width: 800px) {
