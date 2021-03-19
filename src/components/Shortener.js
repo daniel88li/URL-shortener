@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import LinkCard from "./LinkCard";
 import "./Shortener.css";
 
@@ -11,6 +11,7 @@ function Shortener() {
   );
   const [err, setError] = useState("");
   const [, setCurrCopyIndex] = useState(null);
+  const linkRef = useRef(null);
 
   const handleChange = (e) => {
     const { value } = e.target;
@@ -41,10 +42,15 @@ function Shortener() {
             return [...prevList, res.result];
           });
           setError("");
+          // scroll into view of the new link
+          linkRef.current.scrollIntoView({
+            behavior: "smooth",
+            block: "end",
+            inline: "nearest",
+          });
         }
       } catch (err) {
         console.error(err);
-        // setError(err);
       }
     }
     setUrlInput("");
@@ -111,6 +117,7 @@ function Shortener() {
         </div>
       </form>
       {shortenLinks}
+      <div className="scrollTo" ref={linkRef}></div>
     </>
   );
 }
