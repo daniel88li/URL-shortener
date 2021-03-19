@@ -12,9 +12,9 @@ function Content() {
         <div className="image">
           <InfoImage
             className="svg-working"
-            width="300"
+            width="370"
             height="350"
-            viewBox="0 0 400 500"
+            viewBox="0 0 520 500"
           />
         </div>
 

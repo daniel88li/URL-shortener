@@ -15,10 +15,16 @@
   font-weight: 500;
 }
 
-.footer-links p {
+.footer-links a {
   color: hsl(var(--neutral-gray));
   font-size: 14px;
   margin: 0.5rem 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(var(--primary-cyan));
 }
 
 .footer-links > div {
@@ -37,6 +43,11 @@
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
+}
+
+.icon-footer svg:hover {
+  fill: hsl(var(--primary-cyan));
+  cursor: pointer;
 }
 
 @media (min-width: 800px) {

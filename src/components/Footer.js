@@ -16,24 +16,24 @@ function Footer() {
       <div className="footer-links">
         <div>
           <h5>Features</h5>
-          <p>Link Shortening</p>
-          <p>Branded Links</p>
-          <p>Analytics</p>
+          <a href="#shorten-form">Link Shortening</a>
+          <a href="#Features">Branded Links</a>
+          <a href="#Features">Analytics</a>
         </div>
 
         <div>
           <h5>Resources</h5>
-          <p>Blog</p>
-          <p>Developers</p>
-          <p>Support</p>
+          <a href="#Resources">Blog</a>
+          <a href="#Resources">Developers</a>
+          <a href="#Resources">Support</a>
         </div>
 
         <div>
           <h5>Company</h5>
-          <p>About</p>
-          <p>Our Team</p>
-          <p>Careers</p>
-          <p>Contact</p>
+          <a href="#Company">About</a>
+          <a href="#Company">Our Team</a>
+          <a href="#Company">Careers</a>
+          <a href="#Company">Contact</a>
         </div>
       </div>
 

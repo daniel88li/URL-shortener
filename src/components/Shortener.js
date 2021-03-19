@@ -90,7 +90,12 @@ function Shortener() {
 
   return (
     <>
-      <form noValidate className="shorten-form" onSubmit={handleShorten}>
+      <form
+        noValidate
+        className="shorten-form"
+        id="shorten-form"
+        onSubmit={handleShorten}
+      >
         <div className="input-box">
           <input
             type="text"
