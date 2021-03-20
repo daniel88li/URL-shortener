@@ -12,6 +12,7 @@ function Shortener() {
   const [err, setError] = useState("");
   const [, setCurrCopyIndex] = useState(null);
   const linkRef = useRef(null);
+  const urlInputRef = useRef(null);
 
   const handleChange = (e) => {
     const { value } = e.target;
@@ -20,14 +21,14 @@ function Shortener() {
 
   const handleShorten = async (e) => {
     e.preventDefault();
-    const input = document.getElementsByName("url")[0];
 
-    if (urlInput === "") {
+    if (urlInput.trim() === "") {
       setError("Please add a link");
-      input.setCustomValidity("Empty input");
+      urlInputRef.current.setCustomValidity("Empty input");
+      setUrlInput("");
       return;
     }
-    input.setCustomValidity("");
+    urlInputRef.current.setCustomValidity("");
 
     if (isURL(urlInput)) {
       const url = `https://api.shrtco.de/v2/shorten?url=${urlInput}`;
@@ -108,6 +109,7 @@ function Shortener() {
             name="url"
             value={urlInput}
             onChange={handleChange}
+            ref={urlInputRef}
             placeholder="Shorten a link here..."
           />
           <p className="error-msg">{err}</p>
