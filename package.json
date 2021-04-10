@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "A landing page that shortens URLs based on the shrtcode API.",
-  "homepage": "https://daniel88li.github.io/fm-challenge9",
+  "homepage": "https://daniel88li.github.io/URL-shortener",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
