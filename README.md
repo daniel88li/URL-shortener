@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/daniel88li/fm-challenge9)
-- Live Site URL: [Github Pages](https://daniel88li.github.io/fm-challenge9/)
+- Solution URL: [Github](https://github.com/daniel88li/URL-shortener)
+- Live Site URL: [Github Pages](https://daniel88li.github.io/URL-shortener/)
 
 ## My process
 
